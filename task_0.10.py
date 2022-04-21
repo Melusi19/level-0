@@ -1,7 +1,12 @@
-str_input1 = input("Enter the first string:")
-str_input2 = input("Enter the second string:")
+def common():
 
-for i in str_input1:
-    if i in str_input2:
+    str1 = "House"
+    str2 = "Computers"
 
-        print(i)
+    ch1 = set(str1)
+    ch2 = set(str2)
+
+    common_characters = ch1 & ch2
+    print(ch1 & ch2)
+
+common()
