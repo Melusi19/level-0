@@ -2,12 +2,12 @@ def ConvertCtoF(n):
 
     return(n * 1.8) + 32
 
-n = 15
-print(int(ConvertCtoF("Temperature in Fahrenheit is: " + n)))
+n = 20
+print(int(ConvertCtoF(n)))
 
 def ConvertFtoC(m):
-
-    return((m -32)*5) / 9
-
-m = 40
-print(int(ConvertFtoC("Temperature in Celsius is: " + m)))
+    
+    return (m-32)*0.55
+    
+m = 20
+print(int(ConvertFtoC(m)))
