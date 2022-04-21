@@ -1,7 +1,7 @@
 def even_or_odd(num):
     if (num % 2 == 0):
-        print(num, "is an even number")
+        print("Even")
     else:
-        print(num, "is  an odd number")
+        print("Odd")
         
 even_or_odd(45)
