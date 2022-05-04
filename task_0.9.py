@@ -1,6 +1,7 @@
 def vowel(word):
 
-    vowels = "aeiouAEIOU"
-    print([letter for letter in word if letter in vowels])
+    vowels = "aeiou"
+    vow = [letter for letter in word.lower() if letter in vowels]
+    print(",".join(vow))
 
 vowel("HEllo")

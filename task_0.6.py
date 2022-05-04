@@ -11,7 +11,4 @@ def maximum(a,b,c):
 
     return larger
 
-a = 6
-b = 12
-c = 1
-print(maximum(a,b,c))
+print(maximum(6,15,3))
