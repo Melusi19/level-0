@@ -1,44 +1,10 @@
-def convert():
-
-    minutes = 350
-    hours = 60
-
-    print(minutes//hours, "hours", minutes%hours, "minutes")
-
-convert()
-
 def convert(time):
-    
-    hour = time // 3600
-    minutes = time // 60
-    time %= 60
-    
-    return "%02d hours %02d minutes" % (minutes, time)
-      
-n = 133
-print(convert(n))
+    hour = time // 60
+    minutes = (time % 60)
 
-
-def convertor(time):
-    
-    minutes = 350
-    hours = 60
-    
-    print(minutes//hours, "hours", minutes%hours, "minutes")
-    
-n = 133
-convertor(n)
-
-
-def convert(time):
-    
-    minutes = time // 60
-    time %= 60
-    
-    if n <= 60:
-        return "%02d hour, %02d minute " % (minutes, time)
+    if hour <= 1:
+        print(f" {str(hour)} hour , {str(minutes)} minutes ")
     else:
-        return "%02d hours, %02d minutes " % (minutes, time)
+        print(f" {str(hour)} hours , {str(minutes)} minutes ")    
 
-n = 60      
-print(convert(n))
+convert(120) 

@@ -1,11 +1,8 @@
-def common():
-
-    str1 = "House"
-    str2 = "Computers"
-
+def common_characters(str1, str2):
     ch1 = set(str1)
     ch2 = set(str2)
 
-    print(ch1 & ch2)
+    intersection = ch1.intersection(ch2)
+    common = ", ".join(intersection)
 
-common()
+    print(f"Common letters: {common}")

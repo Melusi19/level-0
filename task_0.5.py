@@ -1,12 +1,9 @@
 def find_area(a,b,c):
-    
-    s = (a + b + c) / 2
 
-    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
-    print('The area of the triangle is %f' %area)
+    s = (a + b + c) * 0.5
 
-a = 3.0
-b = 4.0
-c = 5.0
-    
-find_area(a,b,c)
+    area = (s * (s - a) * (s - b) *(s - c)) ** 0.5
+
+    return area
+
+find_area(2,3,4)
