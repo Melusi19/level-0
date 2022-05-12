@@ -1,9 +1,10 @@
-def vowel(word):
-    vowels = "AaEeIiOoUu"
-    new_char = set(word)
-    new_vowels = set (vowels)
-    word_list = (new_char & new_vowels)         
-    string = ", ".join(word_list).lower()
-    return string
+def print_vowels(str): 
+    vowels = "aeiouAEIOU"
+    result = list()
+    for letter in str: 
+        l = letter.lower()
+        if ( l in vowels ) and (l not in result ):
+            result.append(l)
+    print (*result, sep=', ')
 
-print(vowel("HEllo")) 
+print_vowels("HEello")
