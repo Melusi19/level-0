@@ -1,10 +1,15 @@
-def convert(time):
-    hour = time // 60
-    minutes = (time % 60)
+def time_convertor(num):
 
-    if hour <= 1:
-        print(f" {str(hour)} hour , {str(minutes)} minute ")
+    hours = num // 60
+    minutes = num % 60
+    
+    if hours <= 1 and minutes <= 1:
+        return (str(hours) + " hour, " + str(minutes) + " minute")
+    elif hours > 1:
+        return (str(hours) + " hours, " + str(minutes) + " minute")
+    elif minutes > 1:
+        return (str(hours) + " hour, " + str(minutes) + " minutes")
     else:
-        print(f" {str(hour)} hours , {str(minutes)} minutes ")    
-
-convert(61) 
+        return (str(hours) + " hours, " + str(minutes) + " minutes")
+ 
+print(time_convertor(00))
