@@ -1,15 +1,12 @@
 def time_convertor(num):
+    minutes_in_an_hour = 60
 
-    hours = num // 60
-    minutes = num % 60
-    
-    if hours <= 1 and minutes <= 1:
-        return (str(hours) + " hour, " + str(minutes) + " minute")
-    elif hours > 1:
-        return (str(hours) + " hours, " + str(minutes) + " minute")
-    elif minutes > 1:
-        return (str(hours) + " hour, " + str(minutes) + " minutes")
-    else:
-        return (str(hours) + " hours, " + str(minutes) + " minutes")
- 
+    hours = num // minutes_in_an_hour
+    minutes = num % minutes_in_an_hour
+
+    hours_descriptor = "hour" if hours == 1 else "hours"
+    minutes_descriptor = "minute" if minutes == 1 else "minutes"
+
+    return f"{hours} {hours_descriptor}, {minutes} {minutes_descriptor}"
+
 print(time_convertor(00))
