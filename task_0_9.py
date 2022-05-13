@@ -5,6 +5,7 @@ def print_vowels(str):
         l = letter.lower()
         if ( l in vowels ) and (l not in result ):
             result.append(l)
-    print (*result, sep=', ')
-
+    print ("Vowels: ", end = '')
+    print(*result,sep=', ')
+    
 print_vowels("HEello")
