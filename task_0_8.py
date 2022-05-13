@@ -4,9 +4,9 @@ def time_convertor(num):
     hours = num // minutes_in_an_hour
     minutes = num % minutes_in_an_hour
 
-    hours_descriptor = "hour" if hours == 1 else "hours"
-    minutes_descriptor = "minute" if minutes == 1 else "minutes"
+    hours_condition = "hour" if hours == 1 else "hours"
+    minutes_condition = "minute" if minutes == 1 else "minutes"
 
-    return f"{hours} {hours_descriptor}, {minutes} {minutes_descriptor}"
+    return f"{hours} {hours_condition}, {minutes} {minutes_condition}"
 
 print(time_convertor(00))
