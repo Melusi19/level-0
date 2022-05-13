@@ -1,13 +1,8 @@
-def maximum(a,b,c):
-    if (a >= b) and (a >= c):
-        biggest = a
+def maximum(*args):
+    maxi_num = args[0]
+    for i in args:
+        if i > maxi_num:
+            maxi_num = i
+    return maxi_num
 
-    elif (b >= a) and (b >= c):
-        biggest = b   
-
-    else:
-        biggest = c
-
-    return biggest
-
-print("The maximum number is", maximum(20,5,10))
+print(maximum(20,5,10,7,25))
