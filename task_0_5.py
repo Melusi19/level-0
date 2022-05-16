@@ -1,8 +1,8 @@
-def area_of_a_triangle(a,b,c):
+def area_of_a_triangle(num1,num2,num3):
 
-    semiperimeter = (a + b + c) * 0.5
+    semiperimeter = (num1 + num2 + num3) * 0.5
 
-    area = (semiperimeter * (semiperimeter - a) * (semiperimeter - b) *(semiperimeter - c)) ** 0.5
+    area = (semiperimeter * (semiperimeter - num1) * (semiperimeter - num2) *(semiperimeter - num3)) ** 0.5
 
     return area
 
