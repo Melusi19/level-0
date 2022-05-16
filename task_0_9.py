@@ -6,6 +6,7 @@ def print_vowels(str):
         if ( l in vowels ) and (l not in result ):
             result.append(l)
     print ("Vowels: ", end = '')
-    print(*result,sep=', ')
+    #Sep is a parameter in python that primarily formats the printed statements
+    print(*result,sep=', ') 
     
 print_vowels("HEello")
